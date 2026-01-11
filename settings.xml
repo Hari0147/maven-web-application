@@ -37,7 +37,7 @@
     <!-- ========= -->
     <!-- Mirrors   -->
     <!-- Redirect all Maven Central traffic to Nexus -->
-    <!-- ========= -->
+    <!-- =========
     <mirrors>
         <mirror>
             <id>nexus</id>
@@ -45,6 +45,7 @@
             <url>http://nexus.company.com:8081/repository/maven-public/</url>
         </mirror>
     </mirrors>
+    -->
 
     <!-- ========= -->
     <!-- Profiles  -->
