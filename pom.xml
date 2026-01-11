@@ -3,17 +3,17 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.hari</groupId>
-	<artifactId>maven-web-application</artifactId>
+	<artifactId>webapp-release</artifactId>
 	<packaging>war</packaging>
 	<version>26.01</version>
 	
-	<name>maven-web-application</name>
+	<name>webapp-release</name>
 
 	<description>Maven Web Project for Java Project</description>
 
 	<organization>
-		<name>Mithun Technologies</name>
-		<url>http://mithuntechnologies.com/</url>
+		<name>HK</name>
+		<url>http://HK.com/</url>
 	</organization>
 
 	<properties>
