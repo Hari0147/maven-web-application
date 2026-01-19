@@ -96,21 +96,21 @@
 	<distributionManagement>
 	
             <repository>
-	      <id>webapp-release</id>
-	      <name>webapp-release</name>
-	      <url>http://54.160.139.176:8081/repository/webapp-release/</url>
+	      <id>nexus</id>
+	      <name>webapp-release-repo</name>
+	      <url>http://98.93.245.148:8081/repository/webapp-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
-	      <id>webapp-snapshot</id>
-	      <name>webapp-snapshot</name>
-	      <url>http://54.160.139.176:8081/repository/webapp-snapshot/</url>
+	      <id>nexus</id>
+	      <name>webapp-snapshot-repo</name>
+	      <url>http://98.93.245.148:8081/repository/webapp-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>maven-web-application</finalName>
+		<finalName>webapp-release-26.01</finalName>
 		
 		<plugins>
 			<plugin>
