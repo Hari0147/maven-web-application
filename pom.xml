@@ -5,7 +5,7 @@
 	<groupId>com.hari</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	<version>26.01</version>
+	<version>26.02</version>
 	
 	<name>maven-web-application</name>
 
@@ -110,7 +110,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>webapp-release-26.01</finalName>
+		<finalName>webapp-release-26.02</finalName>
 		
 		<plugins>
 			<plugin>
