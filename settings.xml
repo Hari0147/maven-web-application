@@ -32,6 +32,13 @@
             <username>admin</username>
             <password>nexus</password>
         </server>
+ 
+	<server>
+            <id>webapp-snapshot</id>
+ 	    <username>admin</username>
+	    <password>nexus</password>
+	</server>
+
     </servers>
 
     <!-- ========= -->

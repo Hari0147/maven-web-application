@@ -95,12 +95,14 @@
 	
 	<distributionManagement>
 	
-	    <repository>
+            <repository>
+	      <id>webapp-release</id>
 	      <name>webapp-release</name>
 	      <url>http://54.160.139.176:8081/repository/webapp-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
+	      <id>webapp-snapshot</id>
 	      <name>webapp-snapshot</name>
 	      <url>http://54.160.139.176:8081/repository/webapp-snapshot/</url>
 	    </snapshotRepository>
