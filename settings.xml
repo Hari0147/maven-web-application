@@ -28,7 +28,7 @@
     <!-- ========= -->
     <servers>
         <server>
-            <id>nexus</id>
+            <id>webapp-release</id>
             <username>admin</username>
             <password>nexus</password>
         </server>
