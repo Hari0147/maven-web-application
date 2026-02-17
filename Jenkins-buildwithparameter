@@ -1,0 +1,48 @@
+pipeline { 
+    agent any
+    
+    tools {
+        maven 'maven-3.9.5'
+    }
+
+    parameters {
+        choice(
+            name: 'BranchName',
+            choices: ['sit-1', 'sit-2', 'main'],
+            description: 'Select the branch name'
+        )
+    }  
+    
+    stages {
+        
+        stage('Fetch Code') {
+            steps {
+                git branch: "${params.BranchName}",
+                    credentialsId: 'git_cred',
+                    url: 'https://github.com/Hari0147/maven-web-application.git'
+            }    
+        }
+        
+        stage('Build') {
+            steps {
+                sh "mvn clean package"
+            }
+        }
+        
+        stage('copyWarFileIntoTomcatDirectoryInServer') {
+            steps {
+                script {
+
+                    def warFile = sh(
+                        script: "find target -maxdepth 1 -name '*.war'",
+                        returnStdout: true
+                    ).trim()
+
+                    echo "Deploying ${warFile}"
+
+                    sh "cp ${warFile} /opt/apache-tomcat-9.0.115/webapps/"
+                }
+            }
+        }
+    } //closing stages
+} // closing pipeline 
